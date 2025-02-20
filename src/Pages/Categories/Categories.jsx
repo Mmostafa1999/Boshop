@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import UseProducts from "../../Hooks/UseProducts";
+import UseProducts from "../../Hooks/useProducts";
 import MainButton from "../../Shared/MainButton";
 import Spinner from "../../Shared/Spinner";
 import ToastMessage from "../../Shared/ToastMessage";
