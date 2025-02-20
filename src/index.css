@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #db4444;
+  --dark-color: rgb(31, 41, 55);
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px, rgba(145, 158, 171, 0.2);
+  --font-family: "Poppins", serif;
+
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.row {
+  @apply flex flex-wrap py-8 items-center px-4 justify-center;
+}
+
+.btn {
+  @apply rounded w-full px-3 mt-3 py-2 text-sm font-medium  text-white transition-transform duration-300  hover:scale-105;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.active {
+  border-bottom: solid 3px var(--main-color);
+  padding-bottom: 7px;
+  font-weight: 700;
+}
+
+a.active {
+  transition: border-bottom 0.2s;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.product .btn {
+  transition:
+    transform 1s,
+    opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.font-sm {
+  font-size: 0.875rem;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-dark-color {
+  background-color: var(--dark-color) !important;
+}
+
+.custom-top-145 {
+  top: 145px;
+}
+

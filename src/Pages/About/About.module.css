@@ -1,0 +1,11 @@
+/* .About {} */
+
+.about-us-content h6:before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    background: #2d3a4b;
+}

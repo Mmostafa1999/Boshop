@@ -1,0 +1,49 @@
+.snackbar {
+    visibility: hidden; /* Hidden by default */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Center the snackbar horizontally */
+    background-color: #fecaca;
+    color: #991b1b;
+    text-align: center; /* Centered text */
+    border-radius: 5px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* On top of other elements */
+    left: 50%; /* Center horizontally */
+    bottom: 30px; /* 30px from the bottom */
+    transition:
+      visibility 0.5s,
+      opacity 0.5s ease-in-out;
+  }
+  
+  .snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    opacity: 1; /* Full opacity */
+    animation:
+      fadein 0.5s,
+      fadeout 0.5s 2.5s; /* Add fade animations */
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+  
