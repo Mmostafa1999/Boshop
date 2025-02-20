@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import RelatedProducts from "../../components/RelatedProducts/RelatedProducts";
 import { cartContext } from "../../context/CartContext";
-import useProducts from "../../Hooks/useProducts";
+import UseProducts from '../../Hooks/UseProducts';
 import ProductRating from "../../Shared/ProductRating";
 import Spinner from "../../Shared/Spinner";
 import "./ProductDetails.module.css";
@@ -18,7 +18,7 @@ export default function ProductDetails() {
 
   // Fetch the single product using the ID
   const { data: singleProduct, isLoading: isSingleProductLoading } =
-    useProducts({
+    UseProducts({
       id,
       select: product => ({
         title: product.title,
