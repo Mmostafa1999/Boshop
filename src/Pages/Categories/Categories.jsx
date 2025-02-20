@@ -2,13 +2,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import useProducts from "../../Hooks/useProducts";
 import MainButton from "../../Shared/MainButton";
 import Spinner from "../../Shared/Spinner";
 import ToastMessage from "../../Shared/ToastMessage";
 import CategoriesDropdown from "../../components/CategoryCard/CategoriesDropdown";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./Categories.module.css";
+import useProducts from "../../Hooks/useProducts";
 
 export default function Categories() {
   const categories = [
