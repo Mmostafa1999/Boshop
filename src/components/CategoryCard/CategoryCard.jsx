@@ -3,7 +3,7 @@ import "./CategoryCard.module.css";
 import Spinner from "../../Shared/Spinner";
 import { toast } from "react-toastify";
 import ToastMessage from "../../Shared/ToastMessage";
-import UseProducts from "../../Hooks/UseProducts";
+import useProducts from './../../Hooks/useProducts';
 
 export default function CategoryCard() {
   // Fetch categories using the UseProducts hook
@@ -11,7 +11,7 @@ export default function CategoryCard() {
     data: categories,
     isLoading,
     isError,
-  } = UseProducts({
+  } = useProducts({
     fetchCategories: true,
   });
 

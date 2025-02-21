@@ -8,7 +8,7 @@ import ToastMessage from "../../Shared/ToastMessage";
 import CategoriesDropdown from "../../components/CategoryCard/CategoriesDropdown";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./Categories.module.css";
-import UseProducts from "../../Hooks/UseProducts";
+import useProducts from "../../Hooks/useProducts";
 export default function Categories() {
   const categories = [
     { id: 1, name: "Men's Fashion" },
@@ -20,7 +20,7 @@ export default function Categories() {
     data: filteredProducts,
     isLoading,
     isError,
-  } = UseProducts({
+  } = useProducts({
     category: categoryName,
   });
   const [showAll, setShowAll] = useState(false);

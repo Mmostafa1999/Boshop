@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-export default function UseProducts({ id, category, fetchCategories } = {}) {
+export default function useProducts({ id, category, fetchCategories } = {}) {
   // API endpoints
   const BASE_URL = "https://ecommerce.routemisr.com/api/v1/products";
   const CATEGORIES_URL = "https://ecommerce.routemisr.com/api/v1/categories";

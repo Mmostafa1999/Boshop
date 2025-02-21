@@ -5,11 +5,11 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import HeaderSection from "../../Shared/HeaderSection";
 import Spinner from "../../Shared/Spinner";
 import ToastMessage from "../../Shared/ToastMessage";
+import useProducts from "./../../Hooks/useProducts";
 import "./Products.module.css";
-import UseProducts from "../../Hooks/UseProducts";
 
 export default function Products() {
-  const { data, isLoading, isError } = UseProducts();
+  const { data, isLoading, isError } = useProducts();
   const [products, setProducts] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const PRODUCTS_DISPLAY_LIMIT = 5;
