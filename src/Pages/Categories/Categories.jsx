@@ -8,7 +8,7 @@ import ToastMessage from "../../Shared/ToastMessage";
 import CategoriesDropdown from "../../components/CategoryCard/CategoriesDropdown";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./Categories.module.css";
-import UseProducts from "../../Hooks/useProducts";
+import UseProducts from "../../Hooks/UseProducts";
 export default function Categories() {
   const categories = [
     { id: 1, name: "Men's Fashion" },
