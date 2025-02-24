@@ -2,7 +2,7 @@ import MainButton from "../../Shared/MainButton";
 
 const Banner = () => {
   return (
-    <header className="h-screen bg-[#f1eff4] bg-center  md:bg-right-top bg-no-repeat bg-fixed bg-[url('src/assets/slide-bg-1.png')]">
+    <header className="h-screen bg-[#f1eff4] bg-center md:bg-right-top bg-no-repeat bg-fixed bg-[url('/slide-bg-1.png')]">
       <div className="h-full flex flex-col justify-center items-start px-6 sm:px-12 md:px-16">
         {/* Text Section */}
         <div className="flex flex-col gap-4 sm:gap-5">

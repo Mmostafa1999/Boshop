@@ -136,7 +136,7 @@ export default function Checkout() {
 
                 <div className="mt-8 flex justify-between">
                   <button
-                    disabled={isLoading}
+                    disabled={isLoading || products.length === 0}
                     onClick={() => checkout()}
                     className="bg-[var(--main-color)] text-white py-2 px-6 mt-5 rounded hover:bg-red-600">
                     Place Order

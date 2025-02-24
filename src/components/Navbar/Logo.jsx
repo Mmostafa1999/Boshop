@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+import logo from "../../../public/logo.svg";
 export default function Logo() {
   return (
     <>
@@ -7,7 +7,6 @@ export default function Logo() {
         <Link to="/">
           <img src={logo} alt="logo" className="w-13 h-13" />
         </Link>
-
       </div>
     </>
   );

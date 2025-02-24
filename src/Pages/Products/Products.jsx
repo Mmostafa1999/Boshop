@@ -44,9 +44,9 @@ export default function Products() {
         </div>
       )}
 
-      <div className="text-center flex flex-col md:flex-row justify-center align-baseline my-10 md:gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6 my-10">
         <Link to="/">
-          <button className="bg-[var(--main-color)] text-white py-2 px-6  rounded hover:bg-red-600">
+          <button className="bg-[var(--main-color)] text-white py-2 px-6 rounded hover:bg-red-600 w-full md:w-auto">
             Back To Home Page
           </button>
         </Link>
@@ -54,7 +54,7 @@ export default function Products() {
         {!showAll && products?.length > PRODUCTS_DISPLAY_LIMIT && (
           <button
             onClick={handleViewAll}
-            className="bg-[var(--main-color)] text-white py-2 px-6  rounded flex  w-auto  hover:bg-red-600">
+            className="bg-[var(--main-color)] text-white py-2 px-6 rounded hover:bg-red-600 md:w-auto">
             View All Items
           </button>
         )}
